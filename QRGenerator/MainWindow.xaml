@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QRGenerator"
         mc:Ignorable="d"
-        Title="QR Generator" Height="450" Width="450">
+        Title="QR Generator" Height="450" Width="450" Foreground="Black" Background="White">
     <Grid>
-        <StackPanel Margin="10,10,10,14">
+        <StackPanel Margin="10,10,10,10">
             <TextBox x:Name="TextInput" Text="TextBox" TextWrapping="Wrap" Width="282" Height="30" />
             <Button x:Name="GenerateQrButton"  Content="Generate QR" Height="58" Width="117" Click="GenerateQrButton_Click" />
-            <Image x:Name="Qr" Height="316" Width="334" />
+            <Image x:Name="Qr" Height="325" Width="325" />
         </StackPanel>
     </Grid>
 </Window>
