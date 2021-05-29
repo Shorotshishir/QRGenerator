@@ -26,8 +26,7 @@ namespace QRGenerator
                 makeRed = true;
             }
 
-            //var itemData = new ItemData(Id.Text, Ip.Text);
-            var itemData = new ItemData();
+            var itemData = new ItemData(textInput.Id.Text, textInput.Ip.Text);
             var data = JsonConvert.SerializeObject(itemData, Formatting.Indented);
             using var bitmap = GenerateQr(data, makeRed);
             var bitmapImage = BmpImageFromBmp(bitmap);
